@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.purple{
+  color:purple;
+}
+.green{
+  color:green;
+}
+.blue{
+  color:blue;
+}
+.brown{
+  color:brown;
+}
+/* a.ng-binding{
+  display: inline-block;
+} */
+table > *{
+  width:100%;
+}
+table thead , table tbody{
+  background-color: #fff;
+}
+table td , table th{
+  border:2px solid #444
+}
+td{
+  padding-inline:50px;
+  padding-block:20px;
+}

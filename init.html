@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./assets/js/angular.js"></script>
+  <script src="./assets/js/util.js"></script>
+</head>
+<body ng-init="
+      age=34;
+      name='Tomiwa';
+      color='red';
+      students=['John', 'Michael' , 'Ayo' , 'Tomiwa', 'Rex'];
+      compstudents = [
+        {name:'Rex',color:'purple',networth:200000000},
+        {name:'John',color:'brown',networth:20},
+        {name:'Michael',color:'blue',networth:5000},
+        {name:'Tomiwa',color:'green',networth:560000000000000000000}
+      ];
+      myStyle = {color:'red'}
+">
+  <!-- Angular Directives. -->
+  <!-- ng-init -->
+  <!-- Expression/Interpolations -->
+ <p ng-style="myStyle">
+  My name is {{ name }} <br>
+  I am {{age}} years old. <br>
+  My female students is {{ students[3].charAt(0) }}ee <br>
+ </p>
+  <ul>
+    <li ng-style="{color:student.color}" ng-repeat="student in compstudents">{{ student.name }} &larr; {{ student.networth }}</li>
+  </ul>
+  <ul>
+    <li ng-class="{{compstudents[3].name}}">Tomiwa</li>
+  </ul>
+</body>
+</html>
