@@ -27,20 +27,45 @@ app.controller("angController", function ($scope) {
     color: "red",
   };
   $scope.students = [
-    { sn: 1, name: "Linux" , course:'ADSE' , networth:100 },
-    { sn: 2, name: "MayoSauce" , course:'Web' , networth:100000000 },
-    { sn: 3, name: "OyinDML" , course:'ADSE' , networth:2000 },
-    { sn: 4, name: "ay" , course:'ADSE' , networth:1000 },
-    { sn: 5, name: "CW" , course:'ADSE' , networth:1000000000000000}
+    { 
+      sn: 1,
+      name: "Linux",
+      course: "ADSE",
+      networth: 100 
+    },
+    { 
+      sn: 2,
+      name: "MayoSauce",
+      course: "Web",
+      networth: 100000000
+    },
+    { 
+      sn: 3,
+      name: "OyinDML",
+      course: "ADSE",
+      networth: 2000
+    },
+    { 
+      sn: 4,
+      name: "ay",
+      course: "ADSE",
+      networth: 1000
+    },
+    { 
+      sn: 5,
+      name: "CW",
+      course: "ADSE",
+      networth: 1000000000000000 
+    },
   ];
   $scope.tableObjStyle = {
-    border:'2px solid #444',
-    display:'block',
-    width: 'fit-content',
-    marginInline : 'auto',
-    marginBlock: '30px',
-    borderCollapse : 'collapse'
-  }
+    border: "2px solid #444",
+    display: "block",
+    width: "fit-content",
+    marginInline: "auto",
+    marginBlock: "30px",
+    borderCollapse: "collapse",
+  };
 });
 // Style from the model
 // cssText
