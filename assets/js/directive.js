@@ -4,19 +4,23 @@ app.controller("newController", function ($scope) {
   if ($scope.show == "false") {
     $scope.show = false;
   }
-  // const options = {
-  //   method: 'GET',
-  //   headers: {
-  //     'X-RapidAPI-Key': '5ec5b8a860msh3bbe655cd10557ep15b27fjsna85c7aee73cd',
-  //     'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
-  //   }
-  // };
+  $scope.test = null;
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '5ec5b8a860msh3bbe655cd10557ep15b27fjsna85c7aee73cd',
+      'X-RapidAPI-Host': 'burgers1.p.rapidapi.com'
+    }
+  };
   
-  // fetch('https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=apple', options)
-  //   .then(response => response.json())
-  //   .then(response => console.log(response))
-  //   .catch(err => console.error(err));
-
+  fetch('https://burgers1.p.rapidapi.com/burgers', options)
+    .then(response => response.json())
+    .then(response =>{
+      $scope.test = response
+      console.log($scope.test)
+    })
+    .catch(err => console.error(err));
+    
   $scope.btn = {
     display: 'block',
     width:'fit-content',
