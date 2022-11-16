@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MiscApp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./assets/js/angular.js"></script>
+  <script src="./assets/js/miscbox.js"></script>
+  <link rel="stylesheet" href="./assets/css/miscstyles.css">
+  <title>Document</title>
+</head>
+<body ng-controller="MiscController">
+  <!-- ng-include -->
+  <nav class="navbar" ng-include="'./templates/navbar.html'"></nav>
+  <div class="jumbotron" ng-include="'./templates/hero.html'"></div>
+</body>
+</html>

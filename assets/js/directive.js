@@ -5,6 +5,7 @@ app.controller("newController", function ($scope) {
     $scope.show = false;
   }
   $scope.test = null;
+  $scope.imagaddress = ["https://bit.ly/3ULnitr" , "https://bit.ly/3G0SzUR"];
   const options = {
     method: 'GET',
     headers: {
@@ -16,7 +17,8 @@ app.controller("newController", function ($scope) {
   fetch('https://burgers1.p.rapidapi.com/burgers', options)
     .then(response => response.json())
     .then(response =>{
-      $scope.test = response
+      $scope.test = response;
+      $scope.test[0].imagaddress = 'https://bit.ly/3G0SzUR';
       console.log($scope.test)
     })
     .catch(err => console.error(err));
@@ -34,10 +36,10 @@ app.controller("newController", function ($scope) {
   }
   $scope.toggle = function(){
     if($scope.choice == true){
-      $scope.choice = false
+      $scope.choice = false;
     }
     else{
-      $scope.choice = true
+      $scope.choice = true;
     }
   }
 });
