@@ -1,0 +1,34 @@
+:root{
+  --primary : #BE2B93;
+}
+@media (width <= 768px){
+  .navbar , div.navbar , table.navbar , *.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius:4px;
+    
+  }
+
+  *.navbar > a , .navbar a{
+    display:none;
+  }
+  .navbar > .brand , .navbar > .img-brand {
+    filter:saturate(100%);
+    image-rendering: pixelated;
+  }
+  .burger-visible{
+    display: inline-block !important;
+  }
+  .burger-visible::after{
+    content: '\2630';
+    color: var(--primary);
+    font-size: 1.5rem;
+    cursor:pointer;
+    padding-inline:30px;
+  }
+  .remove::after{
+    content : "X";
+  }
+}

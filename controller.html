@@ -9,10 +9,17 @@
   <script src="./assets/js/util.js"></script>
   <link rel="stylesheet" href="./assets/css/app.css">
 </head>
-<body>
-  <div ng-controller="MyController">
+<body ng-controller="MyController">
+  <div >
     {{name}}
     <div class="{{student.color}}" ng-repeat="student in compstudents">{{student.name}} &rarr; {{student.networth}}   </div>
   </div>
+  <form name="data" ng-submit="calculate()">
+    <input type="number" ng-model="price" placeholder="Enter your price" >
+    <input type="number" ng-model="quantity" placeholder="Enter your Quantity" >
+    <input type="number" ng-model="discount" placeholder="Enter your Discount" >
+    <input type="submit" value="Calculate" >
+  </form>
+  <p>Total Amount : {{ amount }}</p>
 </body>
 </html>
