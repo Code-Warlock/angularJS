@@ -7,7 +7,9 @@
   <script src="./assets/js/angular.js"></script>
   <script src="./assets/js/angular-route.js"></script>
   <script src="./assets/js/miscbox.js"></script>
+  <script src="./assets/js/routes.js"></script>
   <link rel="stylesheet" href="./assets/css/miscstyles.css">
+  <base href="/angularJS">
   <title>Document</title>
 </head>
 <body ng-controller="MiscController">
@@ -16,6 +18,7 @@
   <div class="jumbotron" ng-include="'./templates/hero.html'"></div> -->
   <ng-include src="'./templates/navbar.html'" class="navbar"></ng-include>
   <!-- <main role="main" ng-view></main> -->
+  <!-- <a href="Code-Warlock">Code Warlock</a> -->
   <ng-view></ng-view>
   <!-- ng-view -->
 </body>

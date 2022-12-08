@@ -1,3 +1,3 @@
   <img src="./assets/img/Frame.png" alt="Company Logo" onclick="window.location.href='#'" class="img-brand">
-  <a href="#!{{ link | lowercase }}" ng-repeat="link in links">{{ link }}</a>
+  <a href="{{ link | lowercase }}" ng-repeat="link in links">{{ link }}</a>
   <span class="burger-visible {{class}}" ng-click="dropdown()"></span>
